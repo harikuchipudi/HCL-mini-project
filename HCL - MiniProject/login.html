@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login-styles.css">
+</head>
+<body>
+    <main>
+        <section class="backgorund-img">
+            <img src="login-bg.png" alt="login-bg">
+        </section>
+        <section class="details">
+            <div class="login">
+                <h2 class="title">Login</h2>
+                <div class="inputbox">
+                    <input type="text" required="username">
+                    <span>username</span>
+                </div>
+                <div class="inputbox">
+                    <input type="password" required="password" id="password">
+                    <span>password</span>
+                    <img src="hide.png" alt="hide" id="hide">
+                </div>
+                <button id="login">Submit</button>
+                <div>
+                    <p>create an account<a href="sign-up.html"> Sign-Up </a></p>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            let eyeicon = document.getElementById("hide");
+            let password = document.getElementById("password");
+
+            eyeicon.onclick = function(){
+                if(password.type == "password"){
+                    password.type = "text";
+                    eyeicon.src = "show.png";
+                }
+                else{
+                    password.type = "password";
+                    eyeicon.src = "hide.png";
+                }
+            }
+
+            let login = document.getElementById("login");
+            login.onclick = function(){
+                window.location.href = "index.html";
+            }
+
+        </script>
+    </main>
+    <footer>
+        <p>&copy; 2023 Real-Time Report Generator. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>

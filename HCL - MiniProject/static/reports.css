@@ -1,0 +1,58 @@
+
+
+.body {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+}
+
+.header {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.Menu {
+    display: flex;
+    flex-direction: column;
+    column-gap: 20%;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    width: 200px;
+    left: 10%;
+    padding-right: 4%;
+    overflow: hidden;
+}
+
+.Menu-home,.Menu-reports, .Menu-about,.Menu-contact {
+    height: 20px;
+    width: 100px;
+    color: aliceblue;
+    background-color: #6F2093;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: block;
+    padding: 10px 0;
+    border-radius: 20px;
+}
+
+.Menu-home:hover,.Menu-reports:hover, .Menu-about:hover, .Menu-contact:hover {
+    background-color:aliceblue ;
+    color: black;
+    cursor: grab;
+}
+
+.visualization {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+    gap: 20%;
+}
+

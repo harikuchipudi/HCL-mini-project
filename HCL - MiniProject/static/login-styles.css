@@ -1,0 +1,134 @@
+
+.title {
+    font-family: 'Bodoni Moda', serif;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    color:rgb(255, 250, 250);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#313866, #99DBF5);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    font-family: 'Nunito', sans-serif;
+    
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    background-color: #13005A;
+    border-radius: 20px;
+    border-width: 2px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 450px;
+    width: 450px;
+}
+
+.inputbox {
+    position: relative;
+    width: 200px;
+}
+
+.inputbox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background-color: #13005A;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+}
+
+.inputbox span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgb(255, 255, 255, 0.25);
+    text-transform: uppercase;
+}
+
+.inputbox input:valid ~ span,
+.inputbox input:focus ~ span {
+    color: #99DBF5;
+    transform: translateX(10px) translateY(-5px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background-color: #13005A;
+    border-left: 1px solid #99DBF5;
+    border-right: 1px solid #99DBF5;
+}
+
+.inputbox input:valid,
+.inputbox input:focus {
+    border: 1px solid #99DBF5;
+}
+
+footer {
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.details button{
+    height: 30px;
+    width: 80px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.details button:hover{
+    background-color: #13005A;
+    color: #fff;
+}
+
+.login,
+.sign-up {
+    gap: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sign-up{
+    display: none;
+}
+
+#signupopt:hover {
+    color: #99DBF5;
+    cursor: pointer;
+}
+
+.inputbox img {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    cursor: pointer;
+}
