@@ -1,31 +1,32 @@
 
 
+
 .body {
     display: flex;
-    flex-direction: row;
-    gap: 20px;
-    padding: 20px;
+    flex-direction: column;
+}
+
+header{
+    background-color: #6F2093;
 }
 
 .header {
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: aliceblue;
+    margin: 0;
+    width: 100%;
 }
 
 
 
 .Menu {
     display: flex;
-    flex-direction: column;
     column-gap: 20%;
     align-items: center;
-    justify-content: center;
-    gap: 100px;
-    width: 200px;
-    left: 10%;
-    padding-right: 4%;
-    overflow: hidden;
+    justify-content: space-evenly;
+    padding: 2em;
 }
 
 .Menu-home,.Menu-reports, .Menu-about,.Menu-contact {

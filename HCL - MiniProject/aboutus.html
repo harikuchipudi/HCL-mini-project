@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sales Bar Chart</title>
+    <title>About Us</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" href="reports.css">
+    <link rel="stylesheet" href="about.css"> <!-- You may create a new CSS file for styling the about page -->
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -15,7 +15,7 @@
         }
 
         .header {
-            background-color: #6f2093;
+            background-color: #333;
             color: white;
             text-align: center;
             padding: 10px;
@@ -26,7 +26,7 @@
         }
 
         .Menu {
-            background-color: #6f2093;
+            background-color: #333;
             color: white;
             padding: 20px;
             min-width: 120px;
@@ -40,9 +40,6 @@
         .visualization {
             flex-grow: 1;
             padding: 20px;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
         }
 
         canvas {
@@ -52,7 +49,7 @@
 </head>
 <body>
     <header class="header">
-        <h1>Real Time Reports</h1>
+        <h1>About Us</h1>
     </header>
     <div class="body">
         <div class="Menu">
@@ -62,14 +59,8 @@
             <div class="Menu-contact" id="contact">CONTACT</div>
         </div>
         <div class="visualization">
-            <div id="visualization-1">
-                <canvas id="sales-chart" width="400" height="300"></canvas>
-                <h3>Performance of each product</h3>
-            </div>
-            <div id="visualization-2">
-                <canvas id="sales-pie-chart" width="400" height="300"></canvas>
-                <h3>Value of each product in the total Business</h3>
-            </div>
+            <p>Welcome to our about us page. We are a company dedicated to providing real-time reports and valuable insights. Our team is passionate about data visualization and making complex information easy to understand.</p>
+            <p>Feel free to explore our reports and contact us for any inquiries. Thank you for choosing us as your analytics partner!</p>
         </div>
     </div>
 

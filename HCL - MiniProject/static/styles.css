@@ -2,8 +2,10 @@
 main {
     min-height: 80vh;
     display: flex;
-    flex-direction: row;
-    margin-left: 5%;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+
 }
 
 body {
@@ -31,16 +33,10 @@ footer {
 
 .Menu {
     display: flex;
-    flex-direction: column;
     column-gap: 20%;
     align-items: center;
-    justify-content: center;
-    gap: 100px;
-    width: 200px;
-    left: 10%;
-    padding-right: 4%;
-    border-right: 2px solid black;
-    overflow: hidden;
+    justify-content: space-evenly;
+    padding: 2em;
 }
 
 .Menu-home,.Menu-reports, .Menu-about,.Menu-contact {
@@ -64,40 +60,35 @@ footer {
 }
 
 .home-content{
-    padding: 20px;
-    padding-left: 80px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 .transaction {
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    background-color: #6F2093;
-    height: 400px;
-    text-align: center;
-    align-items: center;
-    gap: 8px;
-    color: aliceblue;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size:medium;
-    border-radius: 40px;
-}
-
-.products {
     width: 100%;
     background-color: #6F2093;
-    height: 400px;
-    text-align: center;
-    color: aliceblue;
-    gap: 2px;
-    border-radius: 40px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: auto; /* Auto height to fit content */
+    gap: 8px;
+    font-size: medium;
+    border-radius: 10px;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
+
+/* .products {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #6F2093;
+    height: auto;
+    padding: 16px;
+    gap: 2px;
+    font-size: medium;
+} */
 
 .product {
     border: 2px solid black;
@@ -120,7 +111,19 @@ footer {
     width: 80%;
     height: 40px;
     gap: 1%;
+}
 
+.product-main {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.prod-container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    padding-left: 8em;
 }
 
 .price {

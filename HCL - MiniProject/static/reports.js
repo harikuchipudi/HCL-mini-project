@@ -1,5 +1,5 @@
-// Sales data for products 1, 2, 3, and 4
-const productSales = [150, 220, 180, 300];
+// Initial sales data for products 1, 2, 3, and 4
+let productSales = [150, 220, 180, 300];
 
 // Create a Chart.js bar chart
 const ctx = document.getElementById('sales-chart').getContext('2d');
@@ -40,7 +40,6 @@ const salesChart = new Chart(ctx, {
     }
 });
 
-
 const pieCtx = document.getElementById('sales-pie-chart').getContext('2d');
 const pieChart = new Chart(pieCtx, {
     type: 'pie',
@@ -68,10 +67,27 @@ const pieChart = new Chart(pieCtx, {
     }
 });
 
+// Update data dynamically
+function updateChartData() {
+    // Example: increase sales values
+    productSales = productSales.map(value => value + Math.floor(Math.random() * 20));
+
+    // Update bar chart data
+    salesChart.data.datasets[0].data = productSales;
+    salesChart.update();
+
+    // Update pie chart data
+    pieChart.data.datasets[0].data = productSales;
+    pieChart.update();
+}
+
 let home = document.getElementById("home");
 let about = document.getElementById("about");
 let contact = document.getElementById("contact");
 
 home.addEventListener("click", function(){
     window.location.href="index.html";
-})
+});
+
+// Call updateChartData every 5 seconds (you can adjust the interval as needed)
+setInterval(updateChartData, 1000);

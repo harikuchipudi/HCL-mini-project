@@ -82,18 +82,21 @@ document.addEventListener("DOMContentLoaded", function(){
 
     let newTransaction = document.getElementById("NewTransaction");
     let completeTransaction = document.getElementById("CompleteTransaction");
-    let popup = document.getElementById("popup");
 
     completeTransaction.addEventListener("click", function(){
         count1.value = count2.value = count3.value = count4.value = 0;
         total_value.innerHTML = 0;
-        popup.style.display = "block";
-        
+        window.alert("Transaction entered");
     })
 
     let reports = document.getElementById("reports");
     reports.addEventListener("click", function(){
         window.location.href = "reports.html";
+    })
+
+    let aboutus = this.document.getElementById("aboutus");
+    aboutus.addEventListener("click", function(){
+        window.location.href = "aboutus.html";
     })
 
 

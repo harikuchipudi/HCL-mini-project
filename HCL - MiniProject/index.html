@@ -16,70 +16,72 @@
         <div class="Menu">
             <div class="Menu-home">HOME</div>
             <div class="Menu-reports" id="reports">REPORTS</div>
-            <div class="Menu-about">ABOUT</div>
+            <div class="Menu-about" id="aboutus">ABOUT</div>
             <div class="Menu-contact">CONTACT</div>
         </div>
         <div class="home-content">
             <div class="transaction">
                 <p>TRANSACTION</p>
-                <div class="product-main">
-                    <div class="product">
-                        <p class="product-name">Product-1</p>
+                <div class="prod-container">
+                    <div class="product-main">
+                        <div class="product">
+                            <p class="product-name">Product-1</p>
+                        </div>
+                        <div>
+                            <p class="cost"> ₹ 1000</p>
+                        </div>
+                        <div class="counter-buttons">
+                            <button class="plus-but" id="plus-button1"><img src="plus.png" alt="plus" class="plus"></button>
+                            <button class="minus-but" id="minus-button1"><img src="minus.png" alt="minus" class="minus"></button>
+                        </div>
+                        <div class="counter">
+                            <p><input type="number" id="count1" value="0" min="0"></p>
+                        </div>
                     </div>
-                    <div>
-                        <p class="cost"> ₹ 1000</p>
+                    <div class="product-main">
+                        <div class="product">
+                            <p class="product-name">Product-2</p>
+                        </div>
+                        <div>
+                            <p class="cost"> ₹ 2000</p>
+                        </div>
+                        <div class="counter-buttons">
+                            <button class="plus-but" id="plus-button2"><img src="plus.png" alt="plus" class="plus"></button>
+                            <button class="minus-but" id="minus-button2"><img src="minus.png" alt="minus" class="minus"></button>
+                        </div>
+                        <div class="counter">
+                            <p><input type="number" id="count2" value="0" min="0"></p>
+                        </div>
                     </div>
-                    <div class="counter-buttons">
-                        <button class="plus-but" id="plus-button1"><img src="plus.png" alt="plus" class="plus"></button>
-                        <button class="minus-but" id="minus-button1"><img src="minus.png" alt="minus" class="minus"></button>
+                    <div class="product-main">
+                        <div class="product">
+                            <p class="product-name">Product-3</p>
+                        </div>
+                        <div>
+                            <p class="cost"> ₹ 3000</p>
+                        </div>
+                        <div class="counter-buttons">
+                            <button class="plus-but" id="plus-button3"><img src="plus.png" alt="plus" class="plus"></button>
+                            <button class="minus-but" id="minus-button3"><img src="minus.png" alt="minus" class="minus"></button>
+                        </div>
+                        <div class="counter">
+                            <p><input type="number" id="count3" value="0" min="0"></p>
+                        </div>
                     </div>
-                    <div class="counter">
-                        <p><input type="number" id="count1" value="0" min="0"></p>
-                    </div>
-                </div>
-                <div class="product-main">
-                    <div class="product">
-                        <p class="product-name">Product-2</p>
-                    </div>
-                    <div>
-                        <p class="cost"> ₹ 2000</p>
-                    </div>
-                    <div class="counter-buttons">
-                        <button class="plus-but" id="plus-button2"><img src="plus.png" alt="plus" class="plus"></button>
-                        <button class="minus-but" id="minus-button2"><img src="minus.png" alt="minus" class="minus"></button>
-                    </div>
-                    <div class="counter">
-                        <p><input type="number" id="count2" value="0" min="0"></p>
-                    </div>
-                </div>
-                <div class="product-main">
-                    <div class="product">
-                        <p class="product-name">Product-3</p>
-                    </div>
-                    <div>
-                        <p class="cost"> ₹ 3000</p>
-                    </div>
-                    <div class="counter-buttons">
-                        <button class="plus-but" id="plus-button3"><img src="plus.png" alt="plus" class="plus"></button>
-                        <button class="minus-but" id="minus-button3"><img src="minus.png" alt="minus" class="minus"></button>
-                    </div>
-                    <div class="counter">
-                        <p><input type="number" id="count3" value="0" min="0"></p>
-                    </div>
-                </div>
-                <div class="product-main">
-                    <div class="product">
-                        <p class="product-name">Product-4</p>
-                    </div>
-                    <div>
-                        <p class="cost"> ₹ 4000</p>
-                    </div>
-                    <div class="counter-buttons">
-                        <button class="plus-but" id="plus-button4"><img src="plus.png" alt="plus" class="plus"></button>
-                        <button class="minus-but" id="minus-button4"><img src="minus.png" alt="minus" class="minus"></button>
-                    </div>
-                    <div class="counter">
-                        <p><input type="number" id="count4" value="0" min="0"></p>
+                    <div class="product-main">
+                        <div class="product">
+                            <p class="product-name">Product-4</p>
+                        </div>
+                        <div>
+                            <p class="cost"> ₹ 4000</p>
+                        </div>
+                        <div class="counter-buttons">
+                            <button class="plus-but" id="plus-button4"><img src="plus.png" alt="plus" class="plus"></button>
+                            <button class="minus-but" id="minus-button4"><img src="minus.png" alt="minus" class="minus"></button>
+                        </div>
+                        <div class="counter">
+                            <p><input type="number" id="count4" value="0" min="0"></p>
+                        </div>
                     </div>
                 </div>
                 <div id="total-element" class="total-element">
@@ -88,10 +90,6 @@
                     <button id="CompleteTransaction">Complete Transaction</button>
                     <button id="NewTransaction">New Transaction</button>
                 </div>
-            </div>
-            <div class="products">PRODUCTS</div>
-            <div id="popup">
-                <p>Transaction Entered!</p>
             </div>
         </div>
     </main>

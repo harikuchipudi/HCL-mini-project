@@ -57,6 +57,10 @@
   res.sendFile(__dirname + "/reports.html")
  })
 
+ app.get("/aboutus.html", (req,res)=>{
+  res.sendFile(__dirname+"/aboutus.html")
+ })
+
  app.post('/insertData', (req, res)=>{
   try{
     const username = req.body.username;
